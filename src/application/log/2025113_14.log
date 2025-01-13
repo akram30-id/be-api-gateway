@@ -1,0 +1,64 @@
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"error","message":"\nInvalid `prisma.user.findFirst()` invocation:\n\n\nCan't reach database server at `database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306`\n\nPlease make sure your database server is running at `database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306`.","target":"user.findFirst","timestamp":"2025-01-13T07:39:50.700Z"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":481,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:40:48.496Z"}}
+{"level":"info","message":{"duration":236,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:40:48.736Z"}}
+{"level":"info","message":{"duration":476,"params":"[null,\"afalerin2016@gmail.com\",\"X\",\"SmartCode\",\"X\",\"owner\"]","query":"INSERT INTO `apigtw`.`users` (`id`,`email`,`password`,`first_name`,`last_name`,`scope`) VALUES (?,?,?,?,?,?)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:40:49.213Z"}}
+{"level":"info","message":{"duration":474,"params":"[1,1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:40:49.688Z"}}
+{"level":"info","message":{"duration":247,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:40:49.936Z"}}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":479,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:44:13.924Z"}}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"error","message":"\nInvalid `prisma.user.findFirst()` invocation:\n\n\nCan't reach database server at `database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306`\n\nPlease make sure your database server is running at `database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306`.","target":"user.findFirst","timestamp":"2025-01-13T07:46:58.620Z"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":470,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:47:09.830Z"}}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":467,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:02.049Z"}}
+{"level":"info","message":{"duration":233,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:02.369Z"}}
+{"level":"info","message":{"duration":467,"params":"[\"1736754482133\",\"$2b$05$oYvbTm/SZ4iwk6OsNQZnnOpUMjakkzJb4rNq2AzsSiItmyozhOz7G\",\"client_credentials\",\"basic\"]","query":"INSERT INTO `apigtw`.`clients` (`client_id`,`client_secret`,`grant_type`,`scope`) VALUES (?,?,?,?)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:02.837Z"}}
+{"level":"info","message":{"duration":487,"params":"[\"1736754482133\",1,0]","query":"SELECT `apigtw`.`clients`.`client_id`, `apigtw`.`clients`.`client_secret`, `apigtw`.`clients`.`grant_type`, `apigtw`.`clients`.`scope` FROM `apigtw`.`clients` WHERE `apigtw`.`clients`.`client_id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:03.325Z"}}
+{"level":"info","message":{"duration":237,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:03.562Z"}}
+{"level":"info","message":{"duration":233,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:03.800Z"}}
+{"level":"info","message":{"duration":466,"params":"[\"afalerin2016@gmail.com\"]","query":"SELECT `apigtw`.`users`.`id` FROM `apigtw`.`users` WHERE (`apigtw`.`users`.`email` = ? AND 1=1)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:04.267Z"}}
+{"level":"info","message":{"duration":467,"params":"[\"$2b$10$XdHO9MzMbmp3zYJTovvVzOwpqzE4B1LmQPcVTP1U22OZERO4cmf4S\",1,\"afalerin2016@gmail.com\"]","query":"UPDATE `apigtw`.`users` SET `password` = ? WHERE (`apigtw`.`users`.`id` IN (?) AND (`apigtw`.`users`.`email` = ? AND 1=1))","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:04.736Z"}}
+{"level":"info","message":{"duration":466,"params":"[1,1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:05.203Z"}}
+{"level":"info","message":{"duration":237,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:48:05.440Z"}}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":467,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:33.227Z"}}
+{"level":"info","message":{"duration":233,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:33.464Z"}}
+{"level":"info","message":{"duration":470,"params":"[null,\"afalerin2016@gmail.com\",\"X\",\"SmartCode\",\"X\",\"owner\"]","query":"INSERT INTO `apigtw`.`users` (`id`,`email`,`password`,`first_name`,`last_name`,`scope`) VALUES (?,?,?,?,?,?)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:33.936Z"}}
+{"level":"info","message":{"duration":467,"params":"[1,1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:34.404Z"}}
+{"level":"info","message":{"duration":240,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:34.645Z"}}
+{"level":"info","message":{"duration":232,"params":"[]","query":"SELECT 1","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:49.756Z"}}
+{"level":"info","message":{"duration":234,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:56:49.991Z"}}
+{"level":"error","message":"\nInvalid `prisma.clients.create()` invocation:\n\n{\n  data: {\n    client_id: \"1736755010091\",\n    client_secret: \"$2b$05$8IITpX6ymFleODQ0Zpwhf.VOiL2/k0FhMLUxnO6jh43eaVEgekiiu\",\n    grant_type: \"client_credentials\",\n    scope: \"basic\",\n+   user: {\n+     create: UserCreateWithoutClientInput | UserUncheckedCreateWithoutClientInput,\n+     connectOrCreate: UserCreateOrConnectWithoutClientInput,\n+     connect: UserWhereUniqueInput\n+   }\n  }\n}\n\nArgument `user` is missing.","target":"clients.create","timestamp":"2025-01-13T07:56:50.099Z"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":467,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email`, `apigtw`.`users`.`password`, `apigtw`.`users`.`first_name`, `apigtw`.`users`.`last_name`, `apigtw`.`users`.`scope` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:49.763Z"}}
+{"level":"info","message":{"duration":232,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:50.080Z"}}
+{"level":"info","message":{"duration":467,"params":"[\"1736755069844\",\"$2b$05$Xm0sOfNUMgPBtT4CIZA6rOvnaTbEurSPqq6xsvFLaCen7l.994VfO\",\"client_credentials\",\"basic\",1]","query":"INSERT INTO `apigtw`.`clients` (`client_id`,`client_secret`,`grant_type`,`scope`,`user_id`) VALUES (?,?,?,?,?)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:50.548Z"}}
+{"level":"info","message":{"duration":467,"params":"[\"1736755069844\",1,0]","query":"SELECT `apigtw`.`clients`.`client_id`, `apigtw`.`clients`.`client_secret`, `apigtw`.`clients`.`grant_type`, `apigtw`.`clients`.`scope`, `apigtw`.`clients`.`user_id` FROM `apigtw`.`clients` WHERE `apigtw`.`clients`.`client_id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:51.015Z"}}
+{"level":"info","message":{"duration":259,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:51.275Z"}}
+{"level":"info","message":{"duration":232,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:51.512Z"}}
+{"level":"info","message":{"duration":469,"params":"[\"afalerin2016@gmail.com\"]","query":"SELECT `apigtw`.`users`.`id` FROM `apigtw`.`users` WHERE (`apigtw`.`users`.`email` = ? AND 1=1)","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:51.981Z"}}
+{"level":"info","message":{"duration":466,"params":"[\"$2b$10$2TFSnaI3yPHITsN0l3NUD.oLf9WEGZK2yq.GKOPVBHclKe8ad4Lbe\",1,\"afalerin2016@gmail.com\"]","query":"UPDATE `apigtw`.`users` SET `password` = ? WHERE (`apigtw`.`users`.`id` IN (?) AND (`apigtw`.`users`.`email` = ? AND 1=1))","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:52.448Z"}}
+{"level":"info","message":{"duration":474,"params":"[1,1,0]","query":"SELECT `apigtw`.`users`.`id`, `apigtw`.`users`.`email` FROM `apigtw`.`users` WHERE `apigtw`.`users`.`id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:52.923Z"}}
+{"level":"info","message":{"duration":243,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T07:57:53.167Z"}}

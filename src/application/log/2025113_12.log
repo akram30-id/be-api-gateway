@@ -1,0 +1,24 @@
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"App Started"}
+{"level":"info","message":"Starting a mysql pool with 13 connections."}
+{"level":"info","message":{"duration":2,"params":"[\"afalerin2016@gmail.com\",1,0]","query":"SELECT `certixdb`.`users`.`id`, `certixdb`.`users`.`email`, `certixdb`.`users`.`password`, `certixdb`.`users`.`first_name`, `certixdb`.`users`.`last_name`, `certixdb`.`users`.`scope` FROM `certixdb`.`users` WHERE `certixdb`.`users`.`email` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T05:13:55.241Z"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN","target":"quaint::connector::metrics","timestamp":"2025-01-13T05:13:55.243Z"}}
+{"level":"info","message":{"duration":1,"params":"[null,\"afalerin2016@gmail.com\",\"X\",\"SmartCode\",\"X\",\"owner\"]","query":"INSERT INTO `certixdb`.`users` (`id`,`email`,`password`,`first_name`,`last_name`,`scope`) VALUES (?,?,?,?,?,?)","target":"quaint::connector::metrics","timestamp":"2025-01-13T05:13:55.245Z"}}
+{"level":"info","message":{"duration":0,"params":"[1,1,0]","query":"SELECT `certixdb`.`users`.`id`, `certixdb`.`users`.`email` FROM `certixdb`.`users` WHERE `certixdb`.`users`.`id` = ? LIMIT ? OFFSET ?","target":"quaint::connector::metrics","timestamp":"2025-01-13T05:13:55.246Z"}}
+{"level":"info","message":{"duration":2,"params":"[]","query":"COMMIT","target":"quaint::connector::metrics","timestamp":"2025-01-13T05:13:55.249Z"}}
