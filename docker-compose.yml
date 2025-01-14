@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: "mysql://root:Sm4rtCod3x$@database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306/apigtw"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: apigtw
+    ports:
+      - "3306:3306"
