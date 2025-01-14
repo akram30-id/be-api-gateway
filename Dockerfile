@@ -9,6 +9,7 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
+RUN npm install --save-dev nodemon
 
 # Copy the rest of the application code
 COPY . .
@@ -20,4 +21,4 @@ EXPOSE 3000
 RUN npx prisma generate
 
 # Start the application
-CMD ["node", "index.js"]
+CMD ["npx", "nodemon", "index.js"]
