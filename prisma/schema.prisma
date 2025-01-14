@@ -41,8 +41,8 @@ model Clients {
 
 model AccessTokens {
   access_token String @id
-  client_id String @unique
-  expired_in BigInt
+  client_id String
+  expired_in String @db.VarChar(50)
   scope String @db.VarChar(8)
   
   user_id Int
