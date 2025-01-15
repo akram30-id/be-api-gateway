@@ -38,7 +38,7 @@ jobs:
           # Command to execute on the remote server.
           command: |
             cd /app
-            docker-compose pull
+            docker-compose pull zeroday000/smartcertix:latest
             docker-compose up -d
           # Hostname or IP address of the server.
           host: ${{ secrets.EC2_PUBLIC_IP }}
