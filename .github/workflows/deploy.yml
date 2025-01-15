@@ -31,12 +31,21 @@ jobs:
           docker push zeroday000/smartcertix:latest
 
       - name: Deploy to EC2
-        uses: jetpack-io/ssh-action@1
+        # You may pin to the exact commit or the version.
+        # uses: tiyee/action-ssh@b2d48d44e978ff09e0c37479a429a8374da6bb63
+        uses: tiyee/action-ssh@v1.0.1
         with:
-          host: ${{ secrets.EC2_PUBLIC_IP }}
-          username: ubuntu
-          private-key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
+          # Command to execute on the remote server.
+          command: |
             cd /app
             docker-compose pull
             docker-compose up -d
+                  - name: Action-SSH
+          # Hostname or IP address of the server.
+          host: ${{ secrets.EC2_PUBLIC_IP }}
+          # Username for authentication.
+          username: ubuntu
+          # Port number of the server.
+          port: 22 # optional, default is 22
+          # File  string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
+          privateKey: ${{ secrets.EC2_SSH_KEY }}
