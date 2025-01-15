@@ -7,13 +7,13 @@ const registerUserValidation = Joi.object({
 });
 
 const registerPasswordValidation = Joi.object({
-    email: Joi.string().max(20).required(),
+    email: Joi.string().max(32).required(),
     password: Joi.string().min(8).max(16).required(),
     confirm_password: Joi.string().min(8).max(16).required()
 });
 
 const loginValidation = Joi.object({
-    email: Joi.string().max(20).required(),
+    email: Joi.string().max(32).required(),
     password: Joi.string().min(8).max(16).required()
 })
 

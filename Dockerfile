@@ -15,7 +15,7 @@ RUN npm install --save-dev nodemon
 COPY . .
 
 # Expose the port your app runs on
-EXPOSE 3000
+EXPOSE 4000
 
 # Run database migrations with Prisma
 RUN npx prisma generate
