@@ -4,16 +4,26 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "4000:3000" # Map port 3000 in the container to port 4000 on the host
     environment:
-      DATABASE_URL: "mysql://root:Sm4rtCod3x$@database-1.cnmaaewc8n42.us-east-1.rds.amazonaws.com:3306/apigtw"
+      DATABASE_URL: "mysql://root:Sm4rtCod3x$@certixdb.cj04oa2g0ew8.ap-southeast-1.rds.amazonaws.com:3306/apigtw"
     depends_on:
       - db
+    volumes:
+      - .:/app # Mount local directory to container
+      - /app/node_modules # Prevent overwriting node_modules
+    working_dir: /app # Set the working directory
+    command: npx nodemon index.js # Use nodemon for hot reloading
 
   db:
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: Sm4rtCod3x$
       MYSQL_DATABASE: apigtw
     ports:
-      - "3306:3306"
+      - "3307:3306" # Map port 3306 in the container to port 3307 on the host
+    volumes:
+      - db_data:/var/lib/mysql # Persist database data
+
+volumes:
+  db_data:
