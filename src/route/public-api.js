@@ -1,3 +1,9 @@
+/**
+ * API ENDPOINTS
+ * 
+ * @author akram30-id
+ */
+
 import express from "express";
 import cors from "cors";
 import userController from "../controller/user-controller.js";
