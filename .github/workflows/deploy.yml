@@ -40,7 +40,7 @@ jobs:
             docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/sctx-apigw:1.0.0
             docker stop sctx-apigw || true && docker rm sctx-apigw || true
-            docker run -d --name sctx-apigw -p 4000:3000 ${{ secrets.DOCKER_HUB_USERNAME }}/sctx-apigw:1.0.0
+            docker run -d --name sctx-apigw -p 4000:3000 -e DATABASE_URL=${{ secrets.DB_SECRET }} ${{ secrets.DOCKER_HUB_USERNAME }}/sctx-apigw:1.0.0
           # Hostname or IP address of the server.
           host: ${{ secrets.EC2_PUBLIC_IP }}
           # Username for authentication.
